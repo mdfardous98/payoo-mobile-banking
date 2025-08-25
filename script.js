@@ -13,10 +13,12 @@ document.getElementById("loginButton").addEventListener("click", function (e) {
 
   console.log(mobileNumberValueConverted, pinNumberValueConverted);
 
-  if (mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNumber){
-    window.location.href="./home.html"
-  }
-  else{
-    alert("invalid")
+  if (
+    mobileNumberValueConverted === mobileNumber &&
+    pinNumberValueConverted === pinNumber
+  ) {
+    window.location.href = "./home.html";
+  } else {
+    alert("invalid");
   }
 });
